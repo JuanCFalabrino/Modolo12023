@@ -1,0 +1,1 @@
+Crear un algoritmo el cual realiza un peaton al cruzar dos calles utilizando el semaforo.
