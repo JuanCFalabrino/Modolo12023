@@ -1,6 +1,7 @@
 
 package javaapplication16;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 
@@ -10,6 +11,7 @@ public class JavaApplication16 {
     public static void main(String[] args) {
         
     String nombre ;
+   
     
        
     //Mensaje JOPTION
@@ -22,8 +24,21 @@ public class JavaApplication16 {
     nombre = JOptionPane.showInputDialog(null,"Ingrese su nombre ","INPUT",JOptionPane.QUESTION_MESSAGE);
     //mostrar nombre del tupito
     JOptionPane.showMessageDialog(null,"El nombre del tipito es " + nombre ,"DATOS DEL TIPITO",JOptionPane.WARNING_MESSAGE);
+      
+    //pedir numeros enteros 
+    int numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad  ","INPUT"));
+    //mostrar numeros
+    JOptionPane.showMessageDialog(null,"La edad es de  " + numero ,"DATOS DEL TIPITO",JOptionPane.WARNING_MESSAGE);
         
-        
+    
+    //Mensaje con ICONO
+    ImageIcon BIEN = new ImageIcon("src/Imagenes/bien.png");
+    JOptionPane.showMessageDialog(null,"MUY BIEN", "Posistivo",JOptionPane.INFORMATION_MESSAGE,BIEN);
+    
+    
+    
+    
+    
     }
     
 }
